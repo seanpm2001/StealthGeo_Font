@@ -1,0 +1,85 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 4,
+			"baseLayerMD5": "8722c19f9ecb574b3ba4558e5e7d8745.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "StealthGeo",
+			"scripts": [[18,
+					118,
+					[["whenGreenFlag"],
+						["setSizeTo:", 75],
+						["gotoX:y:", 0, 0],
+						["lookLike:", "A"],
+						["doForever", [["wait:elapsed:from:", 1.5], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "A",
+					"baseLayerID": 1,
+					"baseLayerMD5": "876b8ef7cf3720ebbbca7655a2754376.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 254,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "B",
+					"baseLayerID": 2,
+					"baseLayerMD5": "d13190dc8e68cb22348d4960b177710b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 278,
+					"rotationCenterY": 298
+				},
+				{
+					"costumeName": "C",
+					"baseLayerID": 3,
+					"baseLayerMD5": "4f60abd352175c438c981cbdd25d56b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 208,
+					"rotationCenterY": 336
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 0.75,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "LNX 32,0,0,414",
+		"scriptCount": 1,
+		"spriteCount": 1,
+		"videoOn": false,
+		"userAgent": "Scratch 2.0 Offline Editor",
+		"swfVersion": "v456"
+	}
+}

@@ -1,0 +1,130 @@
+{
+	"objName": "Stage",
+	"scripts": [[10, 10, [["whenClicked"], ["startScene", "backdrop1"], ["stopScripts", "this script"]]],
+		[10, 96, [["whenKeyPressed", "b"], ["startScene", "blank"], ["stopScripts", "this script"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 7,
+			"baseLayerMD5": "1fb4946c360bf71e3ba6879ae42e4580.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "blank",
+			"baseLayerID": 8,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "StealthGeo",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["setSizeTo:", 75],
+						["gotoX:y:", 0, 0],
+						["lookLike:", "A"],
+						["doForever", [["wait:elapsed:from:", 1.5], ["nextCostume"]]]]],
+				[185,
+					10,
+					[["whenKeyPressed", "r"], ["setSizeTo:", 75], ["gotoX:y:", 0, 0], ["lookLike:", "A"]]],
+				[10,
+					200,
+					[["whenKeyPressed", "space"],
+						["setSizeTo:", 75],
+						["gotoX:y:", 0, 0],
+						["lookLike:", "A"],
+						["doForever", [["wait:elapsed:from:", 1.5], ["nextCostume"]]]]],
+				[185, 118, [["whenKeyPressed", "enter"], ["stopScripts", "all"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "A",
+					"baseLayerID": 1,
+					"baseLayerMD5": "876b8ef7cf3720ebbbca7655a2754376.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 254,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "B",
+					"baseLayerID": 2,
+					"baseLayerMD5": "d13190dc8e68cb22348d4960b177710b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 278,
+					"rotationCenterY": 298
+				},
+				{
+					"costumeName": "C",
+					"baseLayerID": 3,
+					"baseLayerMD5": "4f60abd352175c438c981cbdd25d56b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 208,
+					"rotationCenterY": 336
+				},
+				{
+					"costumeName": "D",
+					"baseLayerID": 4,
+					"baseLayerMD5": "bafc016f8d2721b98685085219727c36.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 282
+				},
+				{
+					"costumeName": "E",
+					"baseLayerID": 5,
+					"baseLayerMD5": "d769f827bc066e662e6047d0e4fe66ce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 294,
+					"rotationCenterY": 280
+				},
+				{
+					"costumeName": "F",
+					"baseLayerID": 6,
+					"baseLayerMD5": "d90b0d6d86be0f05150a6b21a2545524.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 116,
+					"rotationCenterY": 294
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 0.75,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Scratch 2.0 Offline Editor",
+		"flashVersion": "LNX 32,0,0,414",
+		"scriptCount": 6,
+		"spriteCount": 1,
+		"videoOn": false,
+		"swfVersion": "v456"
+	}
+}

@@ -1,0 +1,424 @@
+{
+	"objName": "Stage",
+	"scripts": [[10, 10, [["whenClicked"], ["startScene", "backdrop1"], ["stopScripts", "this script"]]],
+		[10, 96, [["whenKeyPressed", "b"], ["startScene", "blank"], ["stopScripts", "this script"]]],
+		[10, 183, [["whenGreenFlag"], ["timerReset"], ["startScene", "backdrop1"], ["stopScripts", "this script"]]],
+		[10, 298, [["whenKeyPressed", "enter"], ["stopScripts", "all"]]]],
+	"scriptComments": [[217, 15, 178, 40, true, 0, "Reset the stage upon click"],
+		[194, 102, 206, 74, true, 3, "Blank the stage, so that letters can be viewed easily without distraction."],
+		[217, 196, 101, 48, true, 6, "Startup script"],
+		[188, 304, 161, 44, true, 10, "End the viewing session"]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 37,
+			"baseLayerMD5": "1fb4946c360bf71e3ba6879ae42e4580.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "blank",
+			"baseLayerID": 38,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "StealthGeo",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["setSizeTo:", 75],
+						["gotoX:y:", 0, 0],
+						["lookLike:", "A"],
+						["doForever", [["wait:elapsed:from:", 1.5], ["nextCostume"]]]]],
+				[10,
+					200,
+					[["whenKeyPressed", "space"],
+						["setSizeTo:", 75],
+						["gotoX:y:", 0, 0],
+						["lookLike:", "A"],
+						["doForever", [["wait:elapsed:from:", 1.5], ["nextCostume"]]]]],
+				[10, 383, [["whenKeyPressed", "enter"], ["stopScripts", "all"]]],
+				[201,
+					235,
+					[["whenKeyPressed", "r"],
+						["setSizeTo:", 75],
+						["gotoX:y:", 0, 0],
+						["lookLike:", "A"],
+						["stopScripts", "this script"]]]],
+			"scriptComments": [[171, 23, 161, 170, true, 0, "Startup script\rResets size\rGoes to the middle\rGoes to the first character\rBegins the slideshow, with a new character every 1.5 seconds."],
+				[362, 241, 138, 48, true, 16, "Reset the slideshow."]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "A",
+					"baseLayerID": 1,
+					"baseLayerMD5": "876b8ef7cf3720ebbbca7655a2754376.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 254,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "B",
+					"baseLayerID": 2,
+					"baseLayerMD5": "d13190dc8e68cb22348d4960b177710b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 278,
+					"rotationCenterY": 298
+				},
+				{
+					"costumeName": "C",
+					"baseLayerID": 3,
+					"baseLayerMD5": "4f60abd352175c438c981cbdd25d56b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 208,
+					"rotationCenterY": 336
+				},
+				{
+					"costumeName": "D",
+					"baseLayerID": 4,
+					"baseLayerMD5": "bafc016f8d2721b98685085219727c36.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 282
+				},
+				{
+					"costumeName": "E",
+					"baseLayerID": 5,
+					"baseLayerMD5": "d769f827bc066e662e6047d0e4fe66ce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 294,
+					"rotationCenterY": 280
+				},
+				{
+					"costumeName": "F",
+					"baseLayerID": 6,
+					"baseLayerMD5": "d90b0d6d86be0f05150a6b21a2545524.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 116,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "G",
+					"baseLayerID": 7,
+					"baseLayerMD5": "a812d6050acc572ca7130a445c31b0cb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 256,
+					"rotationCenterY": 304
+				},
+				{
+					"costumeName": "H",
+					"baseLayerID": 8,
+					"baseLayerMD5": "54e2f308e82979ee846320f409204264.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 242,
+					"rotationCenterY": 264
+				},
+				{
+					"costumeName": "I",
+					"baseLayerID": 9,
+					"baseLayerMD5": "0199d7bcb28fcbbb91889358e2a3512e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 232,
+					"rotationCenterY": 295
+				},
+				{
+					"costumeName": "J",
+					"baseLayerID": 10,
+					"baseLayerMD5": "29193bc7c18850e6106412dc92129120.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 95,
+					"rotationCenterY": 229
+				},
+				{
+					"costumeName": "K",
+					"baseLayerID": 11,
+					"baseLayerMD5": "ee9ca03885a7d2788ca744386c669b22.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "L",
+					"baseLayerID": 12,
+					"baseLayerMD5": "0b40e25d9d3a3ce02828be91b70b146d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 232,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "M",
+					"baseLayerID": 13,
+					"baseLayerMD5": "7f95b1fc61c63e9a8cbee09703793dc4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 310,
+					"rotationCenterY": 242
+				},
+				{
+					"costumeName": "N",
+					"baseLayerID": 14,
+					"baseLayerMD5": "7807fdc6bca9715403790d6c8cb30dd6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 210,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "O",
+					"baseLayerID": 15,
+					"baseLayerMD5": "fdd791f7339967b1cab6ef45db14d527.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 246,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "P",
+					"baseLayerID": 16,
+					"baseLayerMD5": "3e7940eea9dc342ef95a16fbc2cdc001.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Q",
+					"baseLayerID": 17,
+					"baseLayerMD5": "6f724df60554c0bb8dba941f830f8c82.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 116,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "R",
+					"baseLayerID": 18,
+					"baseLayerMD5": "2f30735f2087cce3f827b666aead3a38.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 280
+				},
+				{
+					"costumeName": "S",
+					"baseLayerID": 19,
+					"baseLayerMD5": "e1c048fe7ee8a3d3cd142a2a296e0b41.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 130,
+					"rotationCenterY": 275
+				},
+				{
+					"costumeName": "T",
+					"baseLayerID": 20,
+					"baseLayerMD5": "1b67441399f8c7857ab40ea777d2bb96.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 304,
+					"rotationCenterY": 243
+				},
+				{
+					"costumeName": "U",
+					"baseLayerID": 21,
+					"baseLayerMD5": "9d472ef1d8dab5aa9f364d7b1310ea9e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 142,
+					"rotationCenterY": 170
+				},
+				{
+					"costumeName": "V",
+					"baseLayerID": 22,
+					"baseLayerMD5": "ee24afa8828be14a657c164b5a1b1697.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 294,
+					"rotationCenterY": 174
+				},
+				{
+					"costumeName": "W",
+					"baseLayerID": 23,
+					"baseLayerMD5": "c207084a04dd90006c791d0e53bf8c60.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 388,
+					"rotationCenterY": 188
+				},
+				{
+					"costumeName": "X",
+					"baseLayerID": 24,
+					"baseLayerMD5": "29540d78384131d4e77ec07d0e780b91.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 197,
+					"rotationCenterY": 152
+				},
+				{
+					"costumeName": "Y",
+					"baseLayerID": 25,
+					"baseLayerMD5": "9a7829e002f5cc1595b666f00335b676.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 182,
+					"rotationCenterY": 244
+				},
+				{
+					"costumeName": "Z",
+					"baseLayerID": 26,
+					"baseLayerMD5": "a6a71be6e90310244f0967c2b492d58c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 232
+				},
+				{
+					"costumeName": "0",
+					"baseLayerID": 27,
+					"baseLayerMD5": "103af16de5db8f909f009a97cd4f34b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 258,
+					"rotationCenterY": 230
+				},
+				{
+					"costumeName": "1",
+					"baseLayerID": 28,
+					"baseLayerMD5": "7e58b0d11d429a481755e7c55a10cae1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 46,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "2",
+					"baseLayerID": 29,
+					"baseLayerMD5": "ca5969c945426679381956c1c6e17578.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 184,
+					"rotationCenterY": 262
+				},
+				{
+					"costumeName": "3",
+					"baseLayerID": 30,
+					"baseLayerMD5": "c1f05010a8eed423224cf1c1a16170cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 176,
+					"rotationCenterY": 235
+				},
+				{
+					"costumeName": "4",
+					"baseLayerID": 31,
+					"baseLayerMD5": "bcaaef6dce756bd92672717762c7645d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 102,
+					"rotationCenterY": 240
+				},
+				{
+					"costumeName": "5",
+					"baseLayerID": 32,
+					"baseLayerMD5": "bd6180e7b862d0e2b011b7a52b6c4a2a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 203
+				},
+				{
+					"costumeName": "6",
+					"baseLayerID": 33,
+					"baseLayerMD5": "cc034740332e8a200fe838ccc89ce089.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": 194
+				},
+				{
+					"costumeName": "7",
+					"baseLayerID": 34,
+					"baseLayerMD5": "fcbfef07694d24b20b4ed5e709a04fe8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 214,
+					"rotationCenterY": 225
+				},
+				{
+					"costumeName": "8",
+					"baseLayerID": 35,
+					"baseLayerMD5": "ec233f7b364b24303172fcef506b1d5c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 242,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "9",
+					"baseLayerID": 36,
+					"baseLayerMD5": "263fef8f60fb50412d9ba512cd473505.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 218,
+					"rotationCenterY": 223
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 0.75,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "timer",
+			"param": null,
+			"color": 2926050,
+			"label": "timer",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "StealthGeo",
+			"cmd": "costumeIndex",
+			"param": null,
+			"color": 9065943,
+			"label": "StealthGeo: costume #",
+			"mode": 2,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": -9,
+			"y": 337,
+			"visible": true
+		},
+		{
+			"target": "Stage",
+			"cmd": "sceneName",
+			"param": null,
+			"color": 9065943,
+			"label": "backdrop name",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		}],
+	"info": {
+		"userAgent": "Scratch 2.0 Offline Editor",
+		"flashVersion": "LNX 32,0,0,414",
+		"scriptCount": 8,
+		"spriteCount": 1,
+		"videoOn": false,
+		"swfVersion": "v456"
+	}
+}

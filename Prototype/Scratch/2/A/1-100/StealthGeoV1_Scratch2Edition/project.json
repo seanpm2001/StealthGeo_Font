@@ -1,0 +1,81 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 4,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "StealthGeo",
+			"scripts": [[18,
+					118,
+					[["whenGreenFlag"], ["lookLike:", "costume1"], ["doForever", [["wait:elapsed:from:", 3], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": 0,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 1,
+					"baseLayerMD5": "876b8ef7cf3720ebbbca7655a2754376.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 254,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": 2,
+					"baseLayerMD5": "d13190dc8e68cb22348d4960b177710b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 278,
+					"rotationCenterY": 298
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": 3,
+					"baseLayerMD5": "4f60abd352175c438c981cbdd25d56b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 208,
+					"rotationCenterY": 336
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 12,
+			"scratchY": -9,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "LNX 32,0,0,414",
+		"userAgent": "Scratch 2.0 Offline Editor",
+		"scriptCount": 1,
+		"spriteCount": 1,
+		"videoOn": false,
+		"swfVersion": "v456"
+	}
+}
