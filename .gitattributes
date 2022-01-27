@@ -106,6 +106,14 @@
 *.gitignore linguist-documentation=false
 *.editorconfig linguist-detectable=false
 *.editorconfig linguist-documentation=false
+# Scratch
+# This attribute is experimental. GitHub may not support it.
+*.sb linguist-detectable=true
+*.sb linguist-documentation=false
+*.sb2 linguist-detectable=true
+*.sb2 linguist-documentation=false
+*.sb3 linguist-detectable=true
+*.sb3 linguist-documentation=false
 # Plain Text document
 # Do not include, as it would become the 100% dominant language and would hide all the other languages as "other"
 *.txt linguist-detectable=false
@@ -113,6 +121,6 @@
 # End of linguist script
 # File info
 # File type: gitattributes file (.gitattributes)
-# File version: 3 (Monday, 2021 November 29th at 3:14 pm)
-# Line count (including blank lines and compiler line): 119
+# File version: 4 (Wednesday, 2022 January 26th at 9:26 pm)
+# Line count (including blank lines and compiler line): 127
 # End of script
